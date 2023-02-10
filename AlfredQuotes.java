@@ -3,13 +3,20 @@ public class AlfredQuotes{
     public String basicGreeting(){
         return "Hello, lovely to see you! How are you?";
     }
+
     public String guestGreeting(String name){
         return String.format("Hi %s how is everything?", name);
     }
+    //Overload guestGreeting
+    public String guestGreeting(String firstName, String lastName){
+        return String.format("Hello %s %s, how can I be of help?", firstName, lastName);
+    }
+    
     public String dateAnnouncement() {
         Date date = new Date();
         return ("The current date is: " + date);
     }
+
     public String respondBeforeAlexis(String phrase){
         if(phrase.indexOf("Alexis") > -1) {
             return "Right away, sir. She's not of much help anyways!";
@@ -19,6 +26,7 @@ public class AlfredQuotes{
         }
         return ("Righto, i'll be gone until i'm needed next.");
     }
+
     public String provideFood(String name, String food, Double price) {
         return String.format("Yes, %s I can absolutely fetch your %s, that'll be $%s...kidding, master Wayne never charges his guests.", name, food, price);
     }
@@ -29,6 +37,7 @@ public class AlfredQuotes{
         }
         return("Thank you for letting me serve you, and not Alexa.");
     }
+
     public String checkInventory(String item, Integer count){
         return String.format("The remaining number of %s is %s.", item, count);
     

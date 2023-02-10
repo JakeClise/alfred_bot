@@ -8,6 +8,11 @@ public class AlfredTest {
     //guest greeting
         String testGuestGreeting = alfredBot.guestGreeting("Jake");
         System.out.println(testGuestGreeting);
+
+    //guestgreeting with full name
+        String fullNameGreet = alfredBot.guestGreeting("Lauren", "Clise");
+        System.out.println(fullNameGreet);
+
     //date announcement
         String testDateAnnouncement = alfredBot.dateAnnouncement();
         System.out.println(testDateAnnouncement);
