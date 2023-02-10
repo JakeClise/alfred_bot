@@ -11,5 +11,21 @@ public class AlfredTest {
     //date announcement
         String testDateAnnouncement = alfredBot.dateAnnouncement();
         System.out.println(testDateAnnouncement);
+    
+    //respond before Alexis
+        String alexisTest = alfredBot.respondBeforeAlexis("Alexis");
+        System.out.println(alexisTest);
+
+    //fetching food
+        String fetchFood = alfredBot.provideFood("Jake", "Cheeseburger", 9.0);
+        System.out.println(fetchFood);
+    
+    //yelling at Alexa
+        String yellAtAlexa = alfredBot.yellAtAlexa("James");
+        System.out.println(yellAtAlexa);
+
+    //checking inventory
+        String checkItemInventory = alfredBot.checkInventory("Cheez-its", 50);
+        System.out.println(checkItemInventory);
     }
 }
